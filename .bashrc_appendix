@@ -28,3 +28,7 @@ alias rl="ros2 launch"
 alias rnl="ros2 node list"
 alias rtl="ros2 topic list"
 alias rte="ros2 topic echo"
+
+# --- TERMINAL CUSTOMIZATION ---
+## Using 'wal' to change the terminal colorscheme (requires pywal to be installed)
+(cat ~/.cache/wal/sequences &)
