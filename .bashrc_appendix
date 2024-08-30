@@ -1,0 +1,30 @@
+# --- DOCKER ---
+## Run a docker container with maximal ease of use
+run_image() {
+    xhost +local:docker && docker run -it \
+     -v /home/jannis.haberhausen/:/home/jannis.haberhausen/ \
+     --privileged \
+     --env="DISPLAY" \
+     --env="QT_X11_NO_MITSHM=1" \
+     --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
+     --env="XAUTHORITY=$XAUTH" \
+     --volume="$XAUTH:$XAUTH" \
+     --device=/dev/dri:/dev/dri \
+     $1 \
+     bash
+}
+
+# --- ROS2 ---
+## Source ROS2 and set the domain ID to 42
+source /opt/ros/$ROS_DISTRO/setup.bash
+export ROS_DOMAIN_ID=42
+
+## Useful aliases for ROS2
+alias cb="colcon build"
+alias cbs="colcon build --packages-select"
+alias rosrm="rm -r build/ install/ log/"
+alias sb="source install/setup.bash"
+alias rl="ros2 launch"
+alias rnl="ros2 node list"
+alias rtl="ros2 topic list"
+alias rte="ros2 topic echo"
