@@ -12,6 +12,8 @@ This repo is a collection of useful/convinient files for a quick setup of a new 
 
 ## Terminal Customization
 
+### Color Palette
+
 Use [pywal](https://pypi.org/project/pywal/) to customize your terminal based on your desktop wallpaper.
 Install pywal:
 
@@ -28,4 +30,16 @@ to make the change persistent after closing and opening a terminal add the follo
 to make the changes also persisent after a reboot open "Startup Applications Preferences" and add the new command:
 
 ```wal -R```
+
+### Show git Branch
+
+Add the ```.bash_profile``` file to your root directoy, here:
+
+```~/.bash_profile```
+
+and then source it in you ```.bashrc``` file:
+
+```source ~/.bash_profile```
+
+
 

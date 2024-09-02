@@ -32,3 +32,5 @@ alias rte="ros2 topic echo"
 # --- TERMINAL CUSTOMIZATION ---
 ## Using 'wal' to change the terminal colorscheme (requires pywal to be installed)
 (cat ~/.cache/wal/sequences &)
+## Display currently checked-out git branch in terminal
+source ~/.bash_profile
