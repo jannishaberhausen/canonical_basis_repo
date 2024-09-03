@@ -34,3 +34,12 @@ alias rte="ros2 topic echo"
 (cat ~/.cache/wal/sequences &)
 ## Display currently checked-out git branch in terminal
 source ~/.bash_profile
+
+# --- GIT ---
+## Useful aliases for git
+alias gts="git status"
+alias gta="git add"
+alias gtaa="git add ."
+alias gtc="git commit -m"
+alias gtck="git checkout"
+alias gtckm="git checkout master"
