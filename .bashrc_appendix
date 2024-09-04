@@ -37,9 +37,9 @@ source ~/.bash_profile
 
 # --- GIT ---
 ## Useful aliases for git
-alias gts="git status"
-alias gta="git add"
-alias gtaa="git add ."
-alias gtc="git commit -m"
-alias gtck="git checkout"
-alias gtckm="git checkout master"
+alias gs="git status"
+alias ga="git add"
+alias gaa="git add ."
+alias gcm="git commit -m"
+alias gco="git checkout"
+alias gcom="git checkout master"
