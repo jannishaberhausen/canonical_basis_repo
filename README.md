@@ -9,6 +9,13 @@ This repo is a collection of useful/convinient files for a quick setup of a new 
 
 - [workspace-matrix](https://extensions.gnome.org/extension/1485/workspace-matrix/): arrange workspaces in a two dimensional grid with workspace thumbnails.
 
+## Bashrc Appendix
+
+Run the ```append_bashrc.py``` script to add all commands from the ```.bashrc_appendix``` file to your ```.bashrc``` file.
+
+```python append_bashrc.py```
+
+Or copy-paste your favorite sections by hand.
 
 ## Terminal Customization
 
@@ -37,7 +44,7 @@ Add the ```.bash_profile``` file to your root directoy, here:
 
 ```~/.bash_profile```
 
-and then source it in you ```.bashrc``` file:
+and then source it from your ```.bashrc``` file:
 
 ```source ~/.bash_profile```
 
